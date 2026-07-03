@@ -1,0 +1,122 @@
+[
+  {
+    "id": "canon/CANON.md",
+    "title": "FreeFred Canon",
+    "summary": "**Repo:** FreeFred (`EVEglyphDesign/freefred`)\n**Parent canon:** [CanFree](https://github.com/EVEglyphDesign/canfree) \u2014 all CanFree canon inherits by reference.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/CANON.md",
+    "repo_path": "canon/CANON.md"
+  },
+  {
+    "id": "canon/civilian-voice.md",
+    "title": "FreeFred \u2014 Civilian Voice",
+    "summary": "**Canon ID:** CANON-FREEFRED-CIVILIAN-VOICE-001\n**Status:** locked\n**Governs:** the exact voice, tone, and structure of every civilian-facing surface.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/civilian-voice.md",
+    "repo_path": "canon/civilian-voice.md"
+  },
+  {
+    "id": "canon/founder-exclusion.md",
+    "title": "Founder Exclusion Doctrine",
+    "summary": "Canon ID: **CANON-FREEFRED-FOUNDER-EXCLUSION-001**\nStatus: locked\nApplies to: FreeFred, HelpTheHelpers, CanFree, and every downstream tool.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/founder-exclusion.md",
+    "repo_path": "canon/founder-exclusion.md"
+  },
+  {
+    "id": "canon/fpf-officer-coi.md",
+    "title": "FreeFred \u2014 Fredericton Police Force Officer COI Working View",
+    "summary": "**Canon ID:** CANON-FREEFRED-FPF-OFFICER-COI-001\n**Status:** locked\n**Governs:** how FreeFred profiles individual Fredericton Police Force employees for conflict-of-interest visibility, and to whom that visibility is delivered.\n**Related:** `fredericton-police-posture.md` (amended by this canon),\n`professional-registry-doctrine.md`, `role-classification.md`,\n`pattern-access-doctrine.md`, `non-activist-stance.md`,\nCanFree `canon/canfree-as-base.md`.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/fpf-officer-coi.md",
+    "repo_path": "canon/fpf-officer-coi.md"
+  },
+  {
+    "id": "canon/fredericton-police-posture.md",
+    "title": "FreeFred \u2014 Fredericton Police Force Posture",
+    "summary": "**Canon ID:** CANON-FREEFRED-FPF-001\n**Status:** locked\n**Governs:** how FreeFred engages the Fredericton Police Force.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/fredericton-police-posture.md",
+    "repo_path": "canon/fredericton-police-posture.md"
+  },
+  {
+    "id": "canon/hard-filters.md",
+    "title": "FreeFred \u2014 Hard Filters",
+    "summary": "**Canon ID:** CANON-FREEFRED-FILTERS-001\n**Status:** locked\n**Governs:** machine-enforced exclusions from the corpus. Non-negotiable, non-overrideable.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/hard-filters.md",
+    "repo_path": "canon/hard-filters.md"
+  },
+  {
+    "id": "canon/nb-government-education-history.md",
+    "title": "FreeFred \u2014 Public Education History for NB-Government Professionals",
+    "summary": "**Canon ID:** CANON-FREEFRED-NB-GOV-EDU-001\n**Status:** locked\n**Governs:** the public education-history block attached to every\nNB-government-employed professional whose name surfaces in the FreeFred\ndiversion / docket corpus.\n**Related:** `fpf-officer-coi.md` (COI + SAP HR + education),\n`professional-registry-doctrine.md`, `role-classification.md`,\n`pattern-access-doctrine.md`, `hard-filters.md`.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/nb-government-education-history.md",
+    "repo_path": "canon/nb-government-education-history.md"
+  },
+  {
+    "id": "canon/nb-subset-of-canfree.md",
+    "title": "CANON-FREEFRED-NB-SUBSET-OF-CANFREE-001",
+    "summary": "**FreeFred is a subset of CanFree.** Everything that happens in New Brunswick is a subset of the rules for the country. FreeFred does not restate national rights or federal law. FreeFred inherits from CanFree (see `canon/canfree-as-base.md` in the CanFree repo) and adds only what is specific to New Brunswick.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/nb-subset-of-canfree.md",
+    "repo_path": "canon/nb-subset-of-canfree.md"
+  },
+  {
+    "id": "canon/one-input-total-pull.md",
+    "title": "One-Input Total-Pull Doctrine",
+    "summary": "Canon ID: **CANON-FREEFRED-ONE-INPUT-001**\nStatus: locked\nRelated: `records-recall-doctrine.md`, `priority-of-care.md` (CanFree),\n`licensing-and-tiers.md` (CanFree)",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/one-input-total-pull.md",
+    "repo_path": "canon/one-input-total-pull.md"
+  },
+  {
+    "id": "canon/outreach-identification.md",
+    "title": "Outreach-Identification Doctrine",
+    "summary": "Canon ID: **CANON-FREEFRED-OUTREACH-ID-001**\nStatus: locked\nRelated: `records-recall-doctrine.md`, `one-input-total-pull.md`,\n`hard-filters.md`, `civilian-voice.md`,\nCanFree `canon/priority-of-care.md`",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/outreach-identification.md",
+    "repo_path": "canon/outreach-identification.md"
+  },
+  {
+    "id": "canon/pattern-access-doctrine.md",
+    "title": "FreeFred \u2014 Pattern Access Doctrine",
+    "summary": "**Canon ID:** CANON-FREEFRED-PATTERN-ACCESS-001\n**Status:** locked\n**Governs:** what goes into the corpus, why, and what the civilian is entitled to see.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/pattern-access-doctrine.md",
+    "repo_path": "canon/pattern-access-doctrine.md"
+  },
+  {
+    "id": "canon/professional-registry-doctrine.md",
+    "title": "Professional Registry Doctrine",
+    "summary": "Canon ID: **CANON-FREEFRED-PROFREG-001**\nStatus: locked\nRepo: **HelpTheHelpers** (new sister repo, to be created)\nRelated: `outreach-identification.md`, `records-recall-doctrine.md`,\n`one-input-total-pull.md`, CanFree `canon/care-philosophy.md`",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/professional-registry-doctrine.md",
+    "repo_path": "canon/professional-registry-doctrine.md"
+  },
+  {
+    "id": "canon/records-recall-doctrine.md",
+    "title": "Records-Recall Doctrine",
+    "summary": "Canon ID: **CANON-FREEFRED-RECORDS-RECALL-001**\nStatus: locked\nSupersedes: partial overlap with `pattern-access-doctrine.md` \u2014 that doctrine\nis about the *civilian's right to see*; this one is about the *civilian's\nright to gather back*.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/records-recall-doctrine.md",
+    "repo_path": "canon/records-recall-doctrine.md"
+  },
+  {
+    "id": "canon/role-classification.md",
+    "title": "CANON-FREEFRED-ROLE-CLASSIFICATION-001",
+    "summary": "Every named person surfaced in the New Brunswick diversion, criminal, family, or social-services pipeline is classified into exactly one of two roles. There is no third class. The classification determines what the platform does with, for, or on behalf of that person.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/role-classification.md",
+    "repo_path": "canon/role-classification.md"
+  },
+  {
+    "id": "canon/scope-locked.md",
+    "title": "FreeFred \u2014 Scope Locked",
+    "summary": "**Canon ID:** CANON-FREEFRED-SCOPE-001\n**Status:** locked\n**Governs:** what FreeFred builds first, and what it does not do until the tech is proven.",
+    "source": "freefred",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/canon/scope-locked.md",
+    "repo_path": "canon/scope-locked.md"
+  }
+]

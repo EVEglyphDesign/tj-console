@@ -1,0 +1,101 @@
+[
+  {
+    "case_id": "2024nbpc12",
+    "citation": "2024 NBPC 12",
+    "style_of_cause": "R v Boudreau",
+    "decision_date": "2024-09-10",
+    "keywords": "possession of stolen property \u2014 sentencing",
+    "canlii_url": "https://www.canlii.org/en/nb/nbpc/doc/2024/2024nbpc12/2024nbpc12.html",
+    "database": "nbpc",
+    "language": "en",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/cases/nb/nbpc/2024nbpc12.md"
+  },
+  {
+    "case_id": "2024nbpc13",
+    "citation": "2024 NBPC 13",
+    "style_of_cause": "R v Comeau",
+    "decision_date": "2024-11-02",
+    "keywords": "impaired operation \u2014 s.320.14",
+    "canlii_url": "https://www.canlii.org/en/nb/nbpc/doc/2024/2024nbpc13/2024nbpc13.html",
+    "database": "nbpc",
+    "language": "en",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/cases/nb/nbpc/2024nbpc13.md"
+  },
+  {
+    "case_id": "2024nbpc14",
+    "citation": "2024 NBPC 14",
+    "style_of_cause": "R v Doe",
+    "decision_date": "2024-06-20",
+    "keywords": "assault \u2014 s.266",
+    "canlii_url": "https://www.canlii.org/en/nb/nbpc/doc/2024/2024nbpc14/2024nbpc14.html",
+    "database": "nbpc",
+    "language": "en",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/cases/nb/nbpc/2024nbpc14.md"
+  },
+  {
+    "case_id": "2024nbpc15",
+    "citation": "2024 NBPC 15",
+    "style_of_cause": "R c Leblanc",
+    "decision_date": "2024-08-15",
+    "keywords": "voies de fait \u2014 art. 266",
+    "canlii_url": "https://www.canlii.org/fr/nb/nbpc/doc/2024/2024nbpc15/2024nbpc15.html",
+    "database": "nbpc",
+    "language": "fr",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/cases/nb/nbpc/2024nbpc15.md"
+  },
+  {
+    "case_id": "2024nbpc18",
+    "citation": "2024 NBPC 18",
+    "style_of_cause": "R v Brooks",
+    "decision_date": "2026-06-25",
+    "keywords": "impaired operation \u2014 s.320.16",
+    "canlii_url": "https://www.canlii.org/en/nb/nbpc/doc/2024/2024nbpc18/2024nbpc18.html",
+    "database": "nbpc",
+    "language": "en",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/cases/nb/nbpc/2024nbpc18.md"
+  },
+  {
+    "case_id": "2024nbpc19",
+    "citation": "2024 NBPC 19",
+    "style_of_cause": "R v Broome",
+    "decision_date": "2024-01-01",
+    "keywords": "firearms \u2014 s.56.1(4)(b)",
+    "canlii_url": "https://www.canlii.org/en/nb/nbpc/doc/2024/2024nbpc19/2024nbpc19.html",
+    "database": "nbpc",
+    "language": "en",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/cases/nb/nbpc/2024nbpc19.md"
+  },
+  {
+    "case_id": "2024nbkb5",
+    "citation": "2024 NBKB 5",
+    "style_of_cause": "R v Wright",
+    "decision_date": "2024-03-11",
+    "keywords": "appeal \u2014 sentence",
+    "canlii_url": "https://www.canlii.org/en/nb/nbkb/doc/2024/2024nbkb5/2024nbkb5.html",
+    "database": "nbkb",
+    "language": "en",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/cases/nb/nbkb/2024nbkb5.md"
+  },
+  {
+    "case_id": "2024nbca3",
+    "citation": "2024 NBCA 3",
+    "style_of_cause": "R v Budd",
+    "decision_date": "2024-12-01",
+    "keywords": "assault \u2014 appeal of conviction s.266(b)",
+    "canlii_url": "https://www.canlii.org/en/nb/nbca/doc/2024/2024nbca3/2024nbca3.html",
+    "database": "nbca",
+    "language": "en",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/cases/nb/nbca/2024nbca3.md"
+  },
+  {
+    "case_id": "2018nbqb45",
+    "citation": "2018 NBQB 45",
+    "style_of_cause": "R v Legacy",
+    "decision_date": "2018-05-05",
+    "keywords": "legacy Queen's Bench decision, pre-2020 rename to King's Bench",
+    "canlii_url": "https://www.canlii.org/en/nb/nbqb/doc/2018/2018nbqb45/2018nbqb45.html",
+    "database": "nbqb",
+    "language": "en",
+    "source_url": "https://github.com/EVEglyphDesign/freefred/blob/main/cases/nb/nbqb/2018nbqb45.md"
+  }
+]

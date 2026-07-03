@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>TJ Console — NB Intelligence Layer</title>
+<meta name="robots" content="noindex,nofollow" />
+<meta name="description" content="Private working console for T.J. Burke. NB court dockets, CanLII decisions, and canon material — one drop-in surface." />
+<link rel="stylesheet" href="assets/app.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <span class="mark">FF</span>
+      <div>
+        <div class="brand-line">FreeFred · Intelligence layer</div>
+        <div class="brand-sub">Working console — T.J. Burke</div>
+      </div>
+    </div>
+    <div class="stat-row" id="stat-row">
+      <div class="stat"><span class="n" id="stat-persons">—</span><span class="l">persons</span></div>
+      <div class="stat"><span class="n" id="stat-dockets">—</span><span class="l">docket rows</span></div>
+      <div class="stat"><span class="n" id="stat-locations">—</span><span class="l">NB locations</span></div>
+      <div class="stat"><span class="n" id="stat-cases">—</span><span class="l">CanLII cases</span></div>
+      <div class="stat"><span class="n" id="stat-matched">—</span><span class="l">docket↔case matches</span></div>
+    </div>
+  </header>
+
+  <section class="panel dropbox">
+    <div class="panel-head">
+      <h2>Drop-in cross-reference</h2>
+      <div class="panel-sub">Paste anything the police, Crown, or court sends. It cross-references every name, file number, charge section, and court reference against the repository and returns what we already have.</div>
+    </div>
+    <textarea id="dropin" placeholder="Paste a brief, disclosure letter, docket page, email, or notes here..."></textarea>
+    <div class="dropin-actions">
+      <button id="btn-crossref" class="btn primary">Cross-reference now</button>
+      <button id="btn-sample" class="btn ghost">Load sample brief</button>
+      <button id="btn-clear" class="btn ghost">Clear</button>
+      <span class="dropin-hint" id="dropin-hint">Runs entirely in this browser. Nothing leaves the page.</span>
+    </div>
+    <div id="crossref-results" class="crossref-results" hidden></div>
+  </section>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="people">People</button>
+    <button class="tab" data-tab="cases">CanLII decisions</button>
+    <button class="tab" data-tab="canon">Doctrine (canon)</button>
+    <button class="tab" data-tab="sources">Sources</button>
+  </nav>
+
+  <section class="panel tab-panel" data-panel="people">
+    <div class="panel-head">
+      <h2>People in the NB docket index</h2>
+      <div class="panel-sub">Everyone we've observed in NB provincial and Queen's Bench dockets. Charges are humanized where the section is on file; the raw section code stays visible so it's checkable.</div>
+    </div>
+    <div class="filters">
+      <input id="search" placeholder="Search by name, charge, court location, or file number..." />
+      <select id="filter-location">
+        <option value="">All NB locations</option>
+      </select>
+      <select id="filter-level">
+        <option value="">All court levels</option>
+      </select>
+      <select id="filter-canlii">
+        <option value="">All persons</option>
+        <option value="1">Only with CanLII match</option>
+      </select>
+    </div>
+    <div class="results-meta"><span id="results-count">0</span> shown</div>
+    <div id="people-list" class="people-list"></div>
+  </section>
+
+  <section class="panel tab-panel" data-panel="cases" hidden>
+    <div class="panel-head">
+      <h2>CanLII decisions on file</h2>
+      <div class="panel-sub">NB decisions currently indexed. Each row links to the CanLII source and to the mirrored copy in the FreeFred repo.</div>
+    </div>
+    <div id="cases-list" class="cases-list"></div>
+  </section>
+
+  <section class="panel tab-panel" data-panel="canon" hidden>
+    <div class="panel-head">
+      <h2>Doctrine — what the tool is allowed to do</h2>
+      <div class="panel-sub">The canon files govern how FreeFred behaves — scope, filters, role classification, records-recall doctrine. Every canon file links to its source in the repository.</div>
+    </div>
+    <div id="canon-list" class="canon-list"></div>
+  </section>
+
+  <section class="panel tab-panel" data-panel="sources" hidden>
+    <div class="panel-head">
+      <h2>Where the data comes from</h2>
+      <div class="panel-sub">Every piece of the console is grounded in a public or org-accessible source. No black boxes.</div>
+    </div>
+    <div class="sources-list">
+      <div class="source-card">
+        <h3>NB court dockets</h3>
+        <p><strong>Origin:</strong> <a href="https://www3.gnb.ca/cour/WebDockets/" target="_blank" rel="noreferrer">www3.gnb.ca/cour/WebDockets</a> — the public PDF docket feed the Court of NB publishes.</p>
+        <p><strong>Mirrored in:</strong> <a href="https://github.com/EVEglyphDesign/freefred/tree/main/index" target="_blank" rel="noreferrer">freefred/index/dockets.jsonl</a></p>
+        <p><strong>Every docket row on this console links back to the source PDF.</strong></p>
+      </div>
+      <div class="source-card">
+        <h3>CanLII NB decisions</h3>
+        <p><strong>Origin:</strong> <a href="https://www.canlii.org/en/nb/" target="_blank" rel="noreferrer">canlii.org/en/nb</a> — Canadian Legal Information Institute.</p>
+        <p><strong>Mirrored in:</strong> <a href="https://github.com/EVEglyphDesign/freefred/tree/main/cases/nb" target="_blank" rel="noreferrer">freefred/cases/nb/</a> and <a href="https://github.com/EVEglyphDesign/freefred/blob/main/index/canlii_nb.jsonl" target="_blank" rel="noreferrer">freefred/index/canlii_nb.jsonl</a></p>
+      </div>
+      <div class="source-card">
+        <h3>Docket ↔ CanLII joins</h3>
+        <p><strong>How they're linked:</strong> surname match, charge section match, docket-number exact match, decision-within-30-days-of-hearing. Each match records its signals and a confidence score.</p>
+        <p><strong>File:</strong> <a href="https://github.com/EVEglyphDesign/freefred/blob/main/index/joins.jsonl" target="_blank" rel="noreferrer">freefred/index/joins.jsonl</a></p>
+      </div>
+      <div class="source-card">
+        <h3>Canon (doctrine)</h3>
+        <p><strong>What it is:</strong> the rulebook the tool follows — scope, hard filters, role classification, records-recall doctrine, professional-registry doctrine, pattern-access doctrine.</p>
+        <p><strong>Folder:</strong> <a href="https://github.com/EVEglyphDesign/freefred/tree/main/canon" target="_blank" rel="noreferrer">freefred/canon/</a></p>
+      </div>
+      <div class="source-card">
+        <h3>CanFree (org-private)</h3>
+        <p><strong>What it is:</strong> the national corpus and the broader case-law substrate. Private to EVEglyphDesign org members.</p>
+        <p><strong>Repo:</strong> <a href="https://github.com/EVEglyphDesign/canfree" target="_blank" rel="noreferrer">github.com/EVEglyphDesign/canfree</a> (org access required)</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>FreeFred · Working console for T.J. Burke</div>
+    <div class="foot-links">
+      <a href="https://github.com/EVEglyphDesign/tj-console" target="_blank" rel="noreferrer">This console (repo)</a>
+      <a href="https://github.com/EVEglyphDesign/freefred" target="_blank" rel="noreferrer">FreeFred</a>
+      <a href="https://github.com/EVEglyphDesign/canfree" target="_blank" rel="noreferrer">CanFree</a>
+    </div>
+  </footer>
+
+</div>
+
+<template id="person-card-tpl">
+  <div class="person">
+    <div class="person-head">
+      <div class="person-name"></div>
+      <div class="person-tags"></div>
+    </div>
+    <div class="person-body">
+      <div class="person-charges"></div>
+      <div class="person-meta"></div>
+    </div>
+    <details class="person-details">
+      <summary>See docket detail</summary>
+      <div class="docket-rows"></div>
+    </details>
+  </div>
+</template>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

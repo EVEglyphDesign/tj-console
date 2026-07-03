@@ -1,0 +1,75 @@
+{
+  "docket_rows": 29205,
+  "unique_persons": 1611,
+  "canlii_cases": 9,
+  "matched_joins": 9,
+  "canon_entries": 15,
+  "locations": [
+    "Bathurst",
+    "Campbellton",
+    "Edmundston",
+    "Fredericton",
+    "Miramichi",
+    "Moncton",
+    "Saint_John",
+    "Virtual_Bail",
+    "Woodstock"
+  ],
+  "levels": [
+    "Prov",
+    "QB"
+  ],
+  "top_charges": [
+    [
+      "CC (334)(b)(ii)",
+      2227
+    ],
+    [
+      "CC (266)(b)",
+      1576
+    ],
+    [
+      "CC (733.1)(1)(b)",
+      1325
+    ],
+    [
+      "CC (264.1)(1)(a)",
+      1150
+    ],
+    [
+      "CC (145)(5)(a)",
+      1148
+    ],
+    [
+      "MV (345)(1)",
+      1080
+    ],
+    [
+      null,
+      810
+    ],
+    [
+      "CC (129)(a)",
+      721
+    ],
+    [
+      "CC (145)(4)(a)",
+      658
+    ],
+    [
+      "CC (267)(a)",
+      632
+    ]
+  ],
+  "sources": {
+    "freefred": {
+      "repo": "https://github.com/EVEglyphDesign/freefred",
+      "public": true
+    },
+    "canfree": {
+      "repo": "https://github.com/EVEglyphDesign/canfree",
+      "public": false,
+      "note": "Private \u2014 cross-reference material available to org members."
+    }
+  }
+}
